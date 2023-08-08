@@ -1,0 +1,44 @@
+/* Root VBox (parent container) */
+.root {
+    -fx-background-color: black;
+}
+
+/* Title Label */
+.title-label {
+    -fx-font-size: 40px;
+    -fx-font-weight: bold;
+    -fx-padding: 20px 0;
+    -fx-alignment: center;
+    -fx-text-fill: white;
+}
+
+/* Input Box (HBox) */
+.input-box {
+    -fx-spacing: 10px;
+    -fx-padding: 0 0 0 10px; /* Added left padding */
+}
+
+/* Search Button */
+.search-button {
+    -fx-padding: 5px 10px;
+}
+
+/* Movie List View */
+.movie-list-view {
+    -fx-padding: 0 0 0 10px; /* Added left padding */
+}
+
+/* Movie Info Box (VBox) */
+.movie-info {
+    -fx-spacing: 5px;
+}
+
+/* Movie Info Labels */
+.movie-info-label {
+    -fx-text-fill: white;
+}
+
+/* Back Button */
+.back-button {
+    -fx-padding: 5px 10px;
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movfinal.MainController">
+
+    <VBox spacing="10" alignment="CENTER" styleClass="root">
+
+        <Label fx:id="titleLabel" text="OPEN MOVIE DB" styleClass="title-label" />
+
+        <HBox spacing="10">
+            <TextField fx:id="movieNameField" promptText="Enter movie name" styleClass="input-box" />
+            <Button fx:id="searchButton" text="Search" styleClass="search-button" onAction="#handleSearchButton" />
+
+        </HBox>
+
+        <ListView fx:id="movieList" prefHeight="200" styleClass="movie-list-view" />
+
+
+        <VBox spacing="5" alignment="CENTER" fx:id="movieDetailsBox" visible="false" styleClass="movie-info">
+            <Label fx:id="ratedLabel" styleClass="movie-info-label" />
+            <Label fx:id="releaseDateLabel" styleClass="movie-info-label" />
+            <Label fx:id="runtimeLabel" styleClass="movie-info-label" />
+            <Label fx:id="genreLabel" styleClass="movie-info-label" />
+            <Label fx:id="ratingLabel" styleClass="movie-info-label" />
+
+            <TextArea fx:id="plotArea" prefHeight="100" wrapText="true" />
+
+            <Button fx:id="backButton" text="Back to Search" styleClass="back-button" />
+        </VBox>
+    </VBox>
+</AnchorPane>
